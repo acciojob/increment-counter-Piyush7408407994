@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-
 <html>
+	<head>
+		<title>Increment Counter</title>
+	</head>
+	<body>
+		
+		<p id="counter">0</p>
+		<button onclick="incrementBtn()">Increment</button>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+		<script>
+			const Counter = document.getElementById('counter');
+			let count = 0;
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+			function incrementBtn() {
+				alert("Current value before increment: " + count);
+				count++;
+				Counter.innerText = count;
+			}
+		</script>
+	</body>
 </html>
